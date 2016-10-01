@@ -18,12 +18,12 @@
 
   {% if page.common-ext-css %}
     {% for css in page.common-ext-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
   {% endif %}  
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
   {% endif %}    
   
@@ -51,7 +51,7 @@
 
   {% if page.ext-css %}
     {% for css in page.ext-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{  | prepend: site.baseurl | replace: '//', '/' }}" />
     {% endfor %}
   {% endif %}  
   {% if layout.ext-css %}
